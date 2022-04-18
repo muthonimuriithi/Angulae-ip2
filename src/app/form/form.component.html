@@ -1,17 +1,20 @@
+
+<link rel="stylesheet" href="form.component.css">
+
 <div class="row mt100" *ngIf="showInput">
 	<div class="col-md-2"></div>
 	<div class="col-md-8 git-form">
 
 		<h1 class="heading">Github Search</h1>
 
-		<img class="mb15" src="./github/src/assets/git.jpeg">
+		<img class="sonn" src="https://user-images.githubusercontent.com/98071432/163831319-e8eea1fa-33a6-4664-ad0a-57178a50f2b4.jpeg">
 		<form (ngSubmit)='submitUsername()'  name="gitForm" >
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
 					<input type="text" class="form-control input-lg mb15 user-input" id="username" ngModel="username" name="username" autocomplete="off" placeholder="Github Username">
 
-					<button type="submit" class="btn btn-success btn-lg  mb25 btn-block">Search GitHub User & Repos</button>
+					<button type="submit" class="btn btn-success btn-lg  mb25 btn-block">Search User and Repos</button>
 
 				</div>
 				<div class="col-md-3"></div>
@@ -20,5 +23,6 @@
 	</div>
 	<div class="col-md-2"></div>	
 </div>
-<!-- <app-git-search-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-git-search-results> -->
-<app-search-results></app-search-results>
+<!-- <app-search-results></app-search-results> -->
+
+
