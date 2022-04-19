@@ -13,11 +13,12 @@ import { FormComponent } from './form/form.component';
     AppComponent,
     NavbarComponent,
     FormComponent,
-    // SearchResultsComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

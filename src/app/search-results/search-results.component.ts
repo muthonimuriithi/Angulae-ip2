@@ -5,18 +5,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 // import { HttpClient } from '@angular/common/http';
 
 
-@Component({
-  selector: 'app-search-results',
-  templateUrl: './search-results.component.html',
-  styleUrls: ['./search-results.component.css']
-})
-
-// export class SearchResultsComponent implements OnInit {
+// @Component({
+//   selector: 'app-search-results',
+//   templateUrl: './search-results.component.html',
+//   styleUrls: ['./search-results.component.css']
+// })
+// export class SearchResultsComponent implements OnInit { 
 
 //   @Output() toggleBack = new EventEmitter();
 
 //   user: User []= {
-
+    
 //   }
 
 //   user:User;
