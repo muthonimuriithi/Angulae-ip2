@@ -19,6 +19,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     FormComponent,
     SearchResultsComponent,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     HttpClientModule,
     
   ],
-  providers: [GithubSearchService],
+  providers: [GithubSearchService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
