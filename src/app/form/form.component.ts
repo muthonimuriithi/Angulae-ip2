@@ -2,6 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { GithubSearchService } from '../github-search.service';
 import { User } from '../user';
+import { Repos } from '../repo/repos';
 
 @Component({
   selector: 'app-form',
@@ -10,18 +11,24 @@ import { User } from '../user';
 })
 export class FormComponent implements OnInit {
 
-  'user': User;
-  githubSearchService:GithubSearchService;
-  'username': string;
-  public showInput = true; // Assign showInput boolean value true
+  
+  
+  username: string="muthonimuriithi";
+  public showInput = true;
   public showData = false; 
+  profile!: User;
+  repos: any;
+  constructor(private githubSearchService:GithubSearchService) { 
+		
+	}
 
   
 
-  submitUsername() {
+  submitUsername(username:string) {
 		// this.githubSearchService.newUserData(this.username); // Passing the username entered as an arguement to getUserData function in our service then fed to the API for a response if the user exists
-    this.showInput = false;
-    this.showData = true;
+    this.githubSearchService.getUser(username).then(result=>this.profile=result)
+    // this.showInput = false;
+    // this.showData = true;
 	}
 
   showUserInput(hideInput:any) {
@@ -30,10 +37,7 @@ export class FormComponent implements OnInit {
   }
    
 
-  constructor(githubSearchService:GithubSearchService) { 
-		this.githubSearchService = githubSearchService;
-	}
-
+  
   ngOnInit(): void {
   }
 
