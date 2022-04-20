@@ -63,6 +63,8 @@ To fix a bug or enhance an existing module, follow these steps:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
+[![Landing](https://i.postimg.cc/vZL2rPLh/Screenshot-from-2022-04-21-02-05-12.png)](https://postimg.cc/gxjKdH7L)
+
 
 ## Code scaffolding
 
@@ -84,7 +86,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-* Live link to site: 
+* Live link to site: https://muthonimuriithi.github.io/Angular-ip2/
 
 ## Licence
 
