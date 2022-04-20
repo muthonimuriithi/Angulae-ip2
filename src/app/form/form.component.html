@@ -1,14 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 mx-auto">
       <h1 class="head">Github Search</h1>
-
-      <img
-        class="sonn"
-        src="https://user-images.githubusercontent.com/98071432/163831319-e8eea1fa-33a6-4664-ad0a-57178a50f2b4.jpeg"
-      />
-    </div>
-    <div class="col-lg-6">
+      <div>
+        <img
+          class="sonn"
+          src="https://user-images.githubusercontent.com/98071432/163831319-e8eea1fa-33a6-4664-ad0a-57178a50f2b4.jpeg"
+        />
+      </div>
       <form
         (ngSubmit)="submitUsername(username)"
         name="gitForm"
@@ -36,10 +35,13 @@
   <div class="row">
     <div class="col-lg-8 mx-auto">
       <div class="media">
-        <img class="mr-3" src="{{profile.avatar_url}}" alt="Generic placeholder image" />
+        <img
+          class="mr-3"
+          src="{{ profile.avatar_url }}"
+          alt="Generic placeholder image"
+        />
         <div class="media-body">
-          <h5 class="mt-0">{{profile.login}}</h5>
-         
+          <h5 class="mt-0">{{ profile.login }}</h5>
         </div>
       </div>
     </div>
