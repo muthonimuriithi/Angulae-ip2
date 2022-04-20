@@ -2,7 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { GithubSearchService } from '../github-search.service';
 import { User } from '../user';
-import { Repos } from '../repo/repos';
+import { ReposService } from '../repos.service'
 
 @Component({
   selector: 'app-form',
@@ -18,15 +18,16 @@ export class FormComponent implements OnInit {
   public showData = false; 
   profile!: User;
   repos: any;
-  constructor(private githubSearchService:GithubSearchService) { 
+  
+  constructor(private githubSearchService:GithubSearchService, private reposService: ReposService) { 
 		
 	}
 
   
 
   submitUsername(username:string) {
-		// this.githubSearchService.newUserData(this.username); // Passing the username entered as an arguement to getUserData function in our service then fed to the API for a response if the user exists
-    this.githubSearchService.getUser(username).then(result=>this.profile=result)
+		this.githubSearchService.getUser(username).then(result=>this.profile=result)
+    this.reposService.getRepo(username).then(output=>this.repos=output)
     // this.showInput = false;
     // this.showData = true;
 	}
