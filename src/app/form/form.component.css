@@ -1,12 +1,21 @@
 .sonn{
-    border-radius: 70%;
-    height: 30em;
+    border-radius: 50%;
+    height: 20em;
     margin-bottom: 5em;
+    width: 20em;
+   
+
 }
 #username{
     margin-bottom: 2em;
+   
 }
 
 .head{
-    text-align: center;
+    
+    margin-bottom: 5px;
+    margin-top: 1em
+}
+.brian{
+    margin-top: 10em;
 }
